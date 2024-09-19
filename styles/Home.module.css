@@ -1,89 +1,121 @@
 /* styles/Home.module.css */
 
 .container {
-    padding: 2rem;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    min-height: 100vh;
-  }
-  
-  .title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #333;
-  }
-  
-  .form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section {
-    margin-bottom: 1.5rem;
-  }
-  
-  .section h2 {
-    margin-bottom: 0.5rem;
-    color: #555;
-  }
-  
-  .section label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
-  
-  .section select,
-  .section input[type="checkbox"],
-  .section input[type="text"],
-  .section input[type="email"] {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .section input[type="checkbox"] {
-    width: auto;
-    margin-right: 0.5rem;
-  }
-  
-  .advancedOptions {
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: #eef;
-    border-radius: 4px;
-  }
-  
-  .advancedOptions h3 {
-    margin-bottom: 0.5rem;
-    color: #444;
-  }
-  
-  .submitButton {
-    width: 100%;
-    padding: 0.75rem;
-    background-color: #0070f3;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submitButton:hover {
-    background-color: #005bb5;
-  }
-  
-  .submitButton:disabled {
-    background-color: #999;
-    cursor: not-allowed;
-  }
-  
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  background-color: #f0f4f8; /* Light gray background for a clean look */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333333; /* Dark gray for contrast */
+  font-weight: 600;
+}
+
+.conversation {
+  max-width: 800px;
+  width: 100%;
+  background-color: #ffffff; /* White background for conversation area */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.conversation p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #555555; /* Medium gray for text */
+}
+
+.inputInline {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin: 0 5px;
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 5px;
+  width: auto;
+}
+
+.selectInline {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin: 0 5px;
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for selects */
+}
+
+.optionButton {
+  padding: 8px 16px;
+  font-size: 1rem;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0070f3; /* Blue color for buttons */
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.optionButton:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0070f3; /* Blue color for primary buttons */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.recommendButton {
+  display: block;
+  margin: 2rem auto;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: #b7934c; /* Gold color for recommendation button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.recommendButton:hover {
+  background-color: #a67c00; /* Darker gold on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.recommendation {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333333; /* Dark gray for recommendation text */
+}
+
+.recommendation p {
+  margin: 0;
+}
+
+.strong {
+  font-weight: 600;
+  color: #000000; /* Black for emphasis */
+}
